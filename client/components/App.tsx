@@ -1,10 +1,14 @@
+import Header from './Header'
+import Main from './Main'
+import Footer from './Footer'
+
+
 function App() {
   return (
     <>
-      <header className="header">
-        <h1>My Collection</h1>
-      </header>
-      <section className="main">{/* add your code here */}</section>
+     <Header />
+      < Main />
+      <Footer />
     </>
   )
 }
