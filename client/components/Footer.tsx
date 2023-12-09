@@ -2,7 +2,7 @@
 function Footer() {
   return (
     <>
-      <p>© 2023 by Maddy Rio. All Rights Reserved.</p>
+      <p className="footer">© 2023 by Maddy Rio. All Rights Reserved.</p>
     </>
   )
 }
