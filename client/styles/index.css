@@ -11,11 +11,12 @@ body {
 }
 
 button {
-  margin-bottom: 50px;
+  margin: 20px 0 20px 0;
   background-color: white;
   border: none;
   letter-spacing: 1.5px;
   font-size: 14px;
+  font-weight: bold;
 }
 
 button:hover {
@@ -24,6 +25,11 @@ button:hover {
 color: #010101;
 }
 
+.user {
+  margin-right: 25px;
+  font-size: 14px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .header-content {
   display: flex;
   align-items: center; 

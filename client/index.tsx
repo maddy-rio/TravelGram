@@ -12,9 +12,7 @@ const root = createRoot(document.getElementById('app') as HTMLElement)
 root.render(
   <Auth0Provider
     domain="manaia-2023-maddy.au.auth0.com"
-    clientId="TzUmnHUfwphpC1VZHLIi3rpKVSElXW5R"
-    useRefreshTokens
-    cacheLocation="localstorage"
+    clientId="ql7cajgnZRHA77sJ5j4cfLIhLFkjc7IL"
     authorizationParams={{
       redirect_uri: window.location.origin,
       audience: 'https://TravelGram/api',
