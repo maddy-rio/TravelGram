@@ -8,10 +8,11 @@ body {
   align-items: center;
   text-align: center;
   flex-direction: column;
+zoom: 150%;
 }
 
 button {
-  margin: 20px 0 20px 0;
+  margin: 20px 0 5px 0;
   background-color: white;
   border: none;
   letter-spacing: 1.5px;
@@ -23,10 +24,36 @@ button:hover {
   cursor: pointer;
   text-shadow: 0px 0px 1px rgba(1, 1, 1, 0.4);
 color: #010101;
+font-size: medium;
 }
 
+.app-container {
+  width: 100%;
+  max-width: 1200px; /* Set your desired maximum width */
+  padding: 0 20px; /* Add some padding to the container */
+  box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Add media queries to adjust styles for different screen sizes */
+@media (max-width: 600px) {
+  .app-container {
+    max-width: 100%;
+  }
+}
+
+.add-holiday {
+  margin: -40px 0 25px 0;
+  font-size:18px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   letter-spacing: 1px;
+}
+
+.add-holiday a {
+  text-decoration: none;
+  color:darkmagenta;
+}
 .user {
-  margin-right: 25px;
+  margin: 10px 25px 0 0;
   font-size: 14px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -38,12 +65,12 @@ color: #010101;
 
 .footer {
   font-size: 12px;
-  margin-top: 60px;
+  margin: 60px 0 20px 0;
 }
 
 .logo {
   height: 106px;
-  margin: 0 300px 50px 410px  ;
+  margin: 0 280px 40px 410px  ;
 }
 
 .posts-container {

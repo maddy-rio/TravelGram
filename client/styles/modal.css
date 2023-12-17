@@ -1,0 +1,119 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.fileInput {
+  width: 60%;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+ input {
+  width: 64%;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+ textarea {
+  width: 87%;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 34%;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+.modalBackground {
+  width: 100vw;
+  height: 70vh;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 450px;
+  height: 350px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  margin: 0 100px 0 140px;
+}
+
+.titleCloseBtn {
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
+}
+
+.modalContainer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modalContainer .footer button {
+  width: 100px;
+  height: 25px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}

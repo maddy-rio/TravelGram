@@ -22,7 +22,7 @@
      <>
        <NavGroup>
          <IfAuthenticated>
-           <NavButton onClick={handleSignOut}>LOGOUT</NavButton>
+           <NavButton onClick={handleSignOut}>➤LOGOUT</NavButton>
            {user && <p className="user">Hey {user?.name}! 👋🏻</p>}
          </IfAuthenticated>
          <IfNotAuthenticated>
