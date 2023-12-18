@@ -2,7 +2,7 @@
 export async function up(knex) {
   await knex.schema.createTable('locations', (table) => {
     table.increments('id').primary()
-    table.string('image')
+    table.string('img')
     table.string('location')
     table.string('rating')
     table.string('description')

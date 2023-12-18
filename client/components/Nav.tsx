@@ -20,7 +20,7 @@
 
    return (
      <>
-       <NavGroup>
+       <NavGroup className="nav">
          <IfAuthenticated>
            <NavButton onClick={handleSignOut}>➤LOGOUT</NavButton>
            {user && <p className="user">Hey {user?.name}! 👋🏻</p>}

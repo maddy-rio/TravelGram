@@ -1,6 +1,6 @@
 export interface Location {
   id?: number
-  image: string
+  img: string
   location: string
   description: string
   rating: number

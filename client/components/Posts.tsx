@@ -35,7 +35,7 @@ const Posts = () => {
         {locations?.map((location) => (
           <div className="post" key={location.id}>
             <img
-              src={`/Public/images/${location.image}`}
+              src={`/Public/Images/${location.img}`}
               alt={location.location}
             />
             <h3>{location.location}</h3>

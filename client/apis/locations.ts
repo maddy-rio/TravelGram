@@ -6,3 +6,10 @@ export async function getLocations(): Promise<Location[]> {
     .get('/api/v1/locations')
   return response.body
 }
+
+export async function addPost(post: Location): Promise<Location> {
+  const response = await request
+    .post('/api/v1/addPost')
+    .send(post)
+  return response.body
+}
