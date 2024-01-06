@@ -64,6 +64,9 @@ function AddHoliday({ closeModal }: AddHolidayProps) {
       setFile(null)
 
       closeModal(false)
+
+       window.location.reload()
+       
     } catch (error: unknown) {
   if (axios.isAxiosError(error)) {
     console.error('Error:', error);

@@ -1,5 +1,5 @@
 import express from 'express'
-import { getLocations, addPost } from '../db/dbFunctions'
+import { getLocations, addPost, getUserLocations } from '../db/dbFunctions'
 
 const router = express.Router()
 
@@ -22,6 +22,16 @@ router.post('/', async (req, res) => {
     .catch((error) => {
       res.status(500).send(error)
     })
+})
+
+// GET /api/v1/userLocations
+router.get('/userLocations', async (req, res) => {
+  try {
+    const locations = await getUserLocations()
+    res.json(locations)
+  } catch (error) {
+    res.status(500).send(error)
+  }
 })
 
 export default router

@@ -3,11 +3,13 @@ import * as Path from 'node:path'
 import express from 'express'
 import getLocations from './routes/posts'
 import addPost from './routes/addPost'
+import getUserLocations from './routes/posts'
 
 const server = express()
 server.use(express.json())
 server.use('/api/v1/locations', getLocations)
 server.use('/api/v1/addPost', addPost)
+server.use('/api/v1/userLocations', getUserLocations)
 
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static(Path.resolve('public')))
