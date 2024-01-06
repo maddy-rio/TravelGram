@@ -26,9 +26,13 @@
            <NavButton onClick={handleSignOut}>➤LOGOUT</NavButton>
            {user && <p className="user">Hey {user?.name}! 👋🏻</p>}
            {location.pathname === '/userLocations' ? (
-             <Link to="/">Home</Link>
+             <Link to="/" className="collection">
+               Home
+             </Link>
            ) : (
-             <Link to="/userLocations">Your Collection</Link>
+             <Link to="/userLocations" className="collection">
+               Your Collection{' '}
+             </Link>
            )}
          </IfAuthenticated>
          <IfNotAuthenticated>

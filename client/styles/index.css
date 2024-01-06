@@ -53,8 +53,25 @@ color: #010101;
 .user {
   margin: 10px 0 0 0;
   font-size: 14px;
+  text-decoration: none;
+  color:#010101;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.collection {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  text-decoration: none;
+  color:#b112b4;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.collection:hover {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
 .header-content {
   display: flex;
   align-items: center; 
